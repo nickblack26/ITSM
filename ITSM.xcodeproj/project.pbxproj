@@ -7,19 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D60B7C02C1164E500A32EEE /* WorkspaceSelectorMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D60B7BF2C1164E500A32EEE /* WorkspaceSelectorMenuView.swift */; };
+		1D60B7C22C116AB700A32EEE /* HoverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D60B7C12C116AB700A32EEE /* HoverButton.swift */; };
+		1D60B7C42C116D7300A32EEE /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D60B7C32C116D7300A32EEE /* TextNode.swift */; };
+		1D60B7C92C11F3F100A32EEE /* CustomControlGroupStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D60B7C82C11F3F100A32EEE /* CustomControlGroupStyle.swift */; };
 		1D98974C2C0F748E00993D8F /* ITSMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98974B2C0F748E00993D8F /* ITSMApp.swift */; };
 		1D98974E2C0F748E00993D8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98974D2C0F748E00993D8F /* ContentView.swift */; };
 		1D9897502C0F749000993D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D98974F2C0F749000993D8F /* Assets.xcassets */; };
 		1D9897532C0F749000993D8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D9897522C0F749000993D8F /* Preview Assets.xcassets */; };
+		1D98975C2C0F76BF00993D8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98975B2C0F76BF00993D8F /* AppDelegate.swift */; };
+		1D98975F2C0F793B00993D8F /* CustomNavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98975E2C0F793B00993D8F /* CustomNavbarView.swift */; };
+		1D9897612C0F7B7800993D8F /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D9897602C0F7B7800993D8F /* info.plist */; };
+		1D9897642C0F8F9100993D8F /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9897632C0F8F9100993D8F /* Asset.swift */; };
+		1D9897672C0F908C00993D8F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1D9897662C0F908C00993D8F /* RealmSwift */; };
+		1D9897682C0F909500993D8F /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 1D9897662C0F908C00993D8F /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1D98976C2C0F913500993D8F /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98976B2C0F913500993D8F /* RealmManager.swift */; };
+		1D98976E2C0F96DA00993D8F /* SyncContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98976D2C0F96DA00993D8F /* SyncContentView.swift */; };
+		1D9897702C0F9B1300993D8F /* OpenSycnedRealmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98976F2C0F9B1300993D8F /* OpenSycnedRealmView.swift */; };
+		1DEF3E7D2C0FB98A00E9E8A1 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF3E7C2C0FB98A00E9E8A1 /* SignupView.swift */; };
+		1DEF3E7F2C0FBBA000E9E8A1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF3E7E2C0FBBA000E9E8A1 /* LoginView.swift */; };
+		1DEF3E812C10A71A00E9E8A1 /* MyIssuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF3E802C10A71A00E9E8A1 /* MyIssuesView.swift */; };
+		1DEF3E832C10AD4500E9E8A1 /* AssetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF3E822C10AD4500E9E8A1 /* AssetListView.swift */; };
+		1DEF3E852C10B1FA00E9E8A1 /* AssetFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF3E842C10B1FA00E9E8A1 /* AssetFormView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1D9897692C0F909500993D8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1D9897682C0F909500993D8F /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1D60B7BF2C1164E500A32EEE /* WorkspaceSelectorMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceSelectorMenuView.swift; sourceTree = "<group>"; };
+		1D60B7C12C116AB700A32EEE /* HoverButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverButton.swift; sourceTree = "<group>"; };
+		1D60B7C32C116D7300A32EEE /* TextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNode.swift; sourceTree = "<group>"; };
+		1D60B7C82C11F3F100A32EEE /* CustomControlGroupStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomControlGroupStyle.swift; sourceTree = "<group>"; };
 		1D9897482C0F748E00993D8F /* ITSM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITSM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D98974B2C0F748E00993D8F /* ITSMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITSMApp.swift; sourceTree = "<group>"; };
 		1D98974D2C0F748E00993D8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D98974F2C0F749000993D8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D9897522C0F749000993D8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D9897542C0F749000993D8F /* ITSM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ITSM.entitlements; sourceTree = "<group>"; };
+		1D98975B2C0F76BF00993D8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D98975E2C0F793B00993D8F /* CustomNavbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavbarView.swift; sourceTree = "<group>"; };
+		1D9897602C0F7B7800993D8F /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		1D9897632C0F8F9100993D8F /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		1D98976B2C0F913500993D8F /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		1D98976D2C0F96DA00993D8F /* SyncContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncContentView.swift; sourceTree = "<group>"; };
+		1D98976F2C0F9B1300993D8F /* OpenSycnedRealmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSycnedRealmView.swift; sourceTree = "<group>"; };
+		1DEF3E7C2C0FB98A00E9E8A1 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		1DEF3E7E2C0FBBA000E9E8A1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1DEF3E802C10A71A00E9E8A1 /* MyIssuesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIssuesView.swift; sourceTree = "<group>"; };
+		1DEF3E822C10AD4500E9E8A1 /* AssetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListView.swift; sourceTree = "<group>"; };
+		1DEF3E842C10B1FA00E9E8A1 /* AssetFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,12 +75,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D9897672C0F908C00993D8F /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D60B7BC2C115F7100A32EEE /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				1D60B7C12C116AB700A32EEE /* HoverButton.swift */,
+				1D60B7C82C11F3F100A32EEE /* CustomControlGroupStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		1D98973F2C0F748E00993D8F = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +110,15 @@
 		1D98974A2C0F748E00993D8F /* ITSM */ = {
 			isa = PBXGroup;
 			children = (
-				1D98974B2C0F748E00993D8F /* ITSMApp.swift */,
-				1D98974D2C0F748E00993D8F /* ContentView.swift */,
 				1D98974F2C0F749000993D8F /* Assets.xcassets */,
+				1D9897602C0F7B7800993D8F /* info.plist */,
 				1D9897542C0F749000993D8F /* ITSM.entitlements */,
+				1D98975A2C0F76B100993D8F /* Main */,
+				1D98976A2C0F912900993D8F /* Managers */,
+				1D9897622C0F8F8000993D8F /* Models */,
 				1D9897512C0F749000993D8F /* Preview Content */,
+				1D60B7BC2C115F7100A32EEE /* Styles */,
+				1D98975D2C0F792500993D8F /* Views */,
 			);
 			path = ITSM;
 			sourceTree = "<group>";
@@ -69,6 +131,49 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1D98975A2C0F76B100993D8F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1D98974B2C0F748E00993D8F /* ITSMApp.swift */,
+				1D98975B2C0F76BF00993D8F /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1D98975D2C0F792500993D8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF3E842C10B1FA00E9E8A1 /* AssetFormView.swift */,
+				1DEF3E822C10AD4500E9E8A1 /* AssetListView.swift */,
+				1D98974D2C0F748E00993D8F /* ContentView.swift */,
+				1D98975E2C0F793B00993D8F /* CustomNavbarView.swift */,
+				1DEF3E7E2C0FBBA000E9E8A1 /* LoginView.swift */,
+				1DEF3E802C10A71A00E9E8A1 /* MyIssuesView.swift */,
+				1D98976F2C0F9B1300993D8F /* OpenSycnedRealmView.swift */,
+				1DEF3E7C2C0FB98A00E9E8A1 /* SignupView.swift */,
+				1D98976D2C0F96DA00993D8F /* SyncContentView.swift */,
+				1D60B7BF2C1164E500A32EEE /* WorkspaceSelectorMenuView.swift */,
+				1D60B7C32C116D7300A32EEE /* TextNode.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1D9897622C0F8F8000993D8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1D9897632C0F8F9100993D8F /* Asset.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D98976A2C0F912900993D8F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1D98976B2C0F913500993D8F /* RealmManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,12 +184,16 @@
 				1D9897442C0F748E00993D8F /* Sources */,
 				1D9897452C0F748E00993D8F /* Frameworks */,
 				1D9897462C0F748E00993D8F /* Resources */,
+				1D9897692C0F909500993D8F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ITSM;
+			packageProductDependencies = (
+				1D9897662C0F908C00993D8F /* RealmSwift */,
+			);
 			productName = ITSM;
 			productReference = 1D9897482C0F748E00993D8F /* ITSM.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 1D98973F2C0F748E00993D8F;
+			packageReferences = (
+				1D9897652C0F908C00993D8F /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 1D9897492C0F748E00993D8F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +241,7 @@
 			files = (
 				1D9897532C0F749000993D8F /* Preview Assets.xcassets in Resources */,
 				1D9897502C0F749000993D8F /* Assets.xcassets in Resources */,
+				1D9897612C0F7B7800993D8F /* info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +252,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DEF3E7D2C0FB98A00E9E8A1 /* SignupView.swift in Sources */,
+				1D9897702C0F9B1300993D8F /* OpenSycnedRealmView.swift in Sources */,
+				1D98976E2C0F96DA00993D8F /* SyncContentView.swift in Sources */,
+				1D60B7C22C116AB700A32EEE /* HoverButton.swift in Sources */,
+				1D60B7C42C116D7300A32EEE /* TextNode.swift in Sources */,
+				1D98975C2C0F76BF00993D8F /* AppDelegate.swift in Sources */,
 				1D98974E2C0F748E00993D8F /* ContentView.swift in Sources */,
+				1DEF3E852C10B1FA00E9E8A1 /* AssetFormView.swift in Sources */,
+				1D60B7C92C11F3F100A32EEE /* CustomControlGroupStyle.swift in Sources */,
+				1D60B7C02C1164E500A32EEE /* WorkspaceSelectorMenuView.swift in Sources */,
+				1D9897642C0F8F9100993D8F /* Asset.swift in Sources */,
+				1D98975F2C0F793B00993D8F /* CustomNavbarView.swift in Sources */,
+				1DEF3E812C10A71A00E9E8A1 /* MyIssuesView.swift in Sources */,
 				1D98974C2C0F748E00993D8F /* ITSMApp.swift in Sources */,
+				1DEF3E832C10AD4500E9E8A1 /* AssetListView.swift in Sources */,
+				1DEF3E7F2C0FBBA000E9E8A1 /* LoginView.swift in Sources */,
+				1D98976C2C0F913500993D8F /* RealmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +469,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1D9897652C0F908C00993D8F /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1D9897662C0F908C00993D8F /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D9897652C0F908C00993D8F /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1D9897402C0F748E00993D8F /* Project object */;
 }
