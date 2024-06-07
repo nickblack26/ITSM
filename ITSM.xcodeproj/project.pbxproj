@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		014404932C124AAD0044CDA0 /* CallQueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014404922C124AAD0044CDA0 /* CallQueueView.swift */; };
+		014404952C127B7D0044CDA0 /* AssetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014404942C127B7D0044CDA0 /* AssetType.swift */; };
+		014404972C127B990044CDA0 /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014404962C127B990044CDA0 /* Communication.swift */; };
+		014404992C127BB30044CDA0 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014404982C127BB30044CDA0 /* Company.swift */; };
+		0144049B2C127C830044CDA0 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0144049A2C127C830044CDA0 /* Organization.swift */; };
+		0144049D2C127C9A0044CDA0 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0144049C2C127C9A0044CDA0 /* Team.swift */; };
+		0144049F2C127CA80044CDA0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0144049E2C127CA80044CDA0 /* User.swift */; };
+		014404A12C127CBB0044CDA0 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014404A02C127CBB0044CDA0 /* Issue.swift */; };
+		014404A32C127CCE0044CDA0 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014404A22C127CCE0044CDA0 /* Status.swift */; };
+		014404A52C12823E0044CDA0 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014404A42C12823E0044CDA0 /* SidebarView.swift */; };
 		1D60B7C02C1164E500A32EEE /* WorkspaceSelectorMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D60B7BF2C1164E500A32EEE /* WorkspaceSelectorMenuView.swift */; };
 		1D60B7C22C116AB700A32EEE /* HoverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D60B7C12C116AB700A32EEE /* HoverButton.swift */; };
 		1D60B7C42C116D7300A32EEE /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D60B7C32C116D7300A32EEE /* TextNode.swift */; };
@@ -46,6 +56,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		014404922C124AAD0044CDA0 /* CallQueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallQueueView.swift; sourceTree = "<group>"; };
+		014404942C127B7D0044CDA0 /* AssetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetType.swift; sourceTree = "<group>"; };
+		014404962C127B990044CDA0 /* Communication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Communication.swift; sourceTree = "<group>"; };
+		014404982C127BB30044CDA0 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		0144049A2C127C830044CDA0 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		0144049C2C127C9A0044CDA0 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		0144049E2C127CA80044CDA0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		014404A02C127CBB0044CDA0 /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		014404A22C127CCE0044CDA0 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		014404A42C12823E0044CDA0 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		1D60B7BF2C1164E500A32EEE /* WorkspaceSelectorMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceSelectorMenuView.swift; sourceTree = "<group>"; };
 		1D60B7C12C116AB700A32EEE /* HoverButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverButton.swift; sourceTree = "<group>"; };
 		1D60B7C32C116D7300A32EEE /* TextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNode.swift; sourceTree = "<group>"; };
@@ -154,6 +174,8 @@
 				1D98976D2C0F96DA00993D8F /* SyncContentView.swift */,
 				1D60B7BF2C1164E500A32EEE /* WorkspaceSelectorMenuView.swift */,
 				1D60B7C32C116D7300A32EEE /* TextNode.swift */,
+				014404922C124AAD0044CDA0 /* CallQueueView.swift */,
+				014404A42C12823E0044CDA0 /* SidebarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +184,14 @@
 			isa = PBXGroup;
 			children = (
 				1D9897632C0F8F9100993D8F /* Asset.swift */,
+				014404942C127B7D0044CDA0 /* AssetType.swift */,
+				014404962C127B990044CDA0 /* Communication.swift */,
+				014404982C127BB30044CDA0 /* Company.swift */,
+				014404A02C127CBB0044CDA0 /* Issue.swift */,
+				0144049A2C127C830044CDA0 /* Organization.swift */,
+				014404A22C127CCE0044CDA0 /* Status.swift */,
+				0144049C2C127C9A0044CDA0 /* Team.swift */,
+				0144049E2C127CA80044CDA0 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -252,22 +282,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				014404A12C127CBB0044CDA0 /* Issue.swift in Sources */,
 				1DEF3E7D2C0FB98A00E9E8A1 /* SignupView.swift in Sources */,
 				1D9897702C0F9B1300993D8F /* OpenSycnedRealmView.swift in Sources */,
+				0144049B2C127C830044CDA0 /* Organization.swift in Sources */,
 				1D98976E2C0F96DA00993D8F /* SyncContentView.swift in Sources */,
 				1D60B7C22C116AB700A32EEE /* HoverButton.swift in Sources */,
 				1D60B7C42C116D7300A32EEE /* TextNode.swift in Sources */,
 				1D98975C2C0F76BF00993D8F /* AppDelegate.swift in Sources */,
 				1D98974E2C0F748E00993D8F /* ContentView.swift in Sources */,
+				014404A32C127CCE0044CDA0 /* Status.swift in Sources */,
 				1DEF3E852C10B1FA00E9E8A1 /* AssetFormView.swift in Sources */,
+				014404932C124AAD0044CDA0 /* CallQueueView.swift in Sources */,
 				1D60B7C92C11F3F100A32EEE /* CustomControlGroupStyle.swift in Sources */,
 				1D60B7C02C1164E500A32EEE /* WorkspaceSelectorMenuView.swift in Sources */,
+				014404A52C12823E0044CDA0 /* SidebarView.swift in Sources */,
+				014404992C127BB30044CDA0 /* Company.swift in Sources */,
 				1D9897642C0F8F9100993D8F /* Asset.swift in Sources */,
 				1D98975F2C0F793B00993D8F /* CustomNavbarView.swift in Sources */,
 				1DEF3E812C10A71A00E9E8A1 /* MyIssuesView.swift in Sources */,
 				1D98974C2C0F748E00993D8F /* ITSMApp.swift in Sources */,
 				1DEF3E832C10AD4500E9E8A1 /* AssetListView.swift in Sources */,
+				014404972C127B990044CDA0 /* Communication.swift in Sources */,
+				0144049D2C127C9A0044CDA0 /* Team.swift in Sources */,
+				0144049F2C127CA80044CDA0 /* User.swift in Sources */,
 				1DEF3E7F2C0FBBA000E9E8A1 /* LoginView.swift in Sources */,
+				014404952C127B7D0044CDA0 /* AssetType.swift in Sources */,
 				1D98976C2C0F913500993D8F /* RealmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

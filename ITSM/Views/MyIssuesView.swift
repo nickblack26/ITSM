@@ -1,48 +1,60 @@
-//
-//  MyIssuesView.swift
-//  ITSM
-//
-//  Created by Nick Black on 6/5/24.
-//
-
 import SwiftUI
 import RealmSwift
 
 struct MyIssuesView: View {
+    @State private var showInspector: Bool = false
     @State private var selectedTab: Tab? = .assigned
     @ObservedResults(Issue.self) private var myIssues
-
+    
     var body: some View {
-        VStack {
-            HStack {
+        Grid(alignment: .topLeading) {
+            GridRow(alignment: .top) {
+                List(myIssues) { issue in
+                    HStack {
+                        Text(issue.identifier ?? "")
+                        
+                        Text(issue.name ?? "")
+                        
+                        Spacer()
+                        
+                        Text(
+                            issue.completedAt ?? Date(),
+                            format: .dateTime
+                        )
+                    }
+                }
+                .scrollContentBackground(.hidden)
+            }
+        }
+        .inspector(isPresented: $showInspector) {
+            Form {
                 Text("My issues")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+            }
+            .formStyle(.columns)
+        }
+        .toolbar {
+            ToolbarItemGroup(placement: .navigation) {
+                Text("My issues")
+                    .font(.title3)
+                    .fontWeight(.semibold)
                 
                 ForEach(Tab.allCases, id: \.self) {
-                    Text($0.rawValue)
-                        .tag($0)
+                    Button($0.rawValue.capitalized) {
+                        
+                    }
+                    .tag($0)
                 }
             }
             
-            Grid {
-                GridRow(alignment: .top) {
-                    List(myIssues) { issue in
-                        HStack {
-                            Text(issue.identifier ?? "")
-                            
-                            Text(issue.name ?? "")
-                            
-                            Spacer()
-                            
-                            Text(
-                                issue.completedAt ?? Date(),
-                                format: .dateTime
-                            )
-                        }
-                    }
-                    .scrollContentBackground(.hidden)
+            ToolbarItem(placement: .secondaryAction) {
+                Button("Toggle sidebar", systemImage: "sidebar.squares.trailing") {
+                    showInspector.toggle()
                 }
             }
         }
+        .navigationTitle("")
     }
 }
 
@@ -56,5 +68,9 @@ extension MyIssuesView {
 }
 
 #Preview {
-    MyIssuesView()
+    NavigationStack {
+        MyIssuesView()
+            .frame(width: 750, height: 750)
+    }
+    .presentedWindowStyle(.hiddenTitleBar)
 }
