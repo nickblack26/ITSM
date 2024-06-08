@@ -8,7 +8,7 @@ struct SyncContentView: View {
         if let user = app.currentUser {
             let config: Realm.Configuration = user.flexibleSyncConfiguration { subs in
                 guard let innerOptional = user.customData["organizationId"], let anyBSON = innerOptional, case let .objectId(objectId) = anyBSON else { return }
-
+            
                 subs.append(QuerySubscription<Organization>(name: "organizations", query: {
                     $0._id == objectId
                 }))
@@ -25,9 +25,7 @@ struct SyncContentView: View {
                 }))
                 print("Appended teams query")
                 
-                subs.append(QuerySubscription<Issue>(name: "my_issues", query: {
-                    $0.assigneeId == objectId
-                }))
+                subs.append(QuerySubscription<Issue>(name: "issues"))
                 print("Appended my_issues query")
                 
                 subs.append(QuerySubscription<User>(name: "users"))

@@ -26,7 +26,6 @@
 		1D9897502C0F749000993D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D98974F2C0F749000993D8F /* Assets.xcassets */; };
 		1D9897532C0F749000993D8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D9897522C0F749000993D8F /* Preview Assets.xcassets */; };
 		1D98975C2C0F76BF00993D8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98975B2C0F76BF00993D8F /* AppDelegate.swift */; };
-		1D98975F2C0F793B00993D8F /* CustomNavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98975E2C0F793B00993D8F /* CustomNavbarView.swift */; };
 		1D9897612C0F7B7800993D8F /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D9897602C0F7B7800993D8F /* info.plist */; };
 		1D9897642C0F8F9100993D8F /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9897632C0F8F9100993D8F /* Asset.swift */; };
 		1D9897672C0F908C00993D8F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1D9897662C0F908C00993D8F /* RealmSwift */; };
@@ -34,6 +33,23 @@
 		1D98976C2C0F913500993D8F /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98976B2C0F913500993D8F /* RealmManager.swift */; };
 		1D98976E2C0F96DA00993D8F /* SyncContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98976D2C0F96DA00993D8F /* SyncContentView.swift */; };
 		1D9897702C0F9B1300993D8F /* OpenSycnedRealmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98976F2C0F9B1300993D8F /* OpenSycnedRealmView.swift */; };
+		1DB8D7662C134BE700C3D50B /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB8D7652C134BE700C3D50B /* Favorite.swift */; };
+		1DB8D7682C1355F600C3D50B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB8D7672C1355F600C3D50B /* SettingsView.swift */; };
+		1DB8D76B2C13562200C3D50B /* WorkspaceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB8D76A2C13562200C3D50B /* WorkspaceSettings.swift */; };
+		1DB8D76D2C13563500C3D50B /* AccountSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB8D76C2C13563500C3D50B /* AccountSettings.swift */; };
+		1DB8D76F2C13564700C3D50B /* TeamSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB8D76E2C13564700C3D50B /* TeamSettings.swift */; };
+		1DB8D7722C135A1400C3D50B /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB8D7712C135A1400C3D50B /* GeneralSettingsView.swift */; };
+		1DB8D7762C13675500C3D50B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB8D7752C13675500C3D50B /* DetailView.swift */; };
+		1DB8D7782C13689D00C3D50B /* AssetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB8D7772C13689D00C3D50B /* AssetDetailView.swift */; };
+		1DB8D77A2C1369F600C3D50B /* IssueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB8D7792C1369F600C3D50B /* IssueDetailView.swift */; };
+		1DB8D77C2C13912A00C3D50B /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB8D77B2C13912A00C3D50B /* UserListView.swift */; };
+		1DB8D77E2C13929700C3D50B /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB8D77D2C13929700C3D50B /* UserDetailView.swift */; };
+		1DDD8B052C13AD3D00F932C0 /* ProfileSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD8B042C13AD3D00F932C0 /* ProfileSettings.swift */; };
+		1DDD8B082C13B09E00F932C0 /* Binding+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD8B072C13B09E00F932C0 /* Binding+Extension.swift */; };
+		1DDD8B0A2C13B2A500F932C0 /* AccountSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD8B092C13B2A500F932C0 /* AccountSettingsView.swift */; };
+		1DDD8B0C2C13B3EE00F932C0 /* AccountPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD8B0B2C13B3EE00F932C0 /* AccountPreferencesView.swift */; };
+		1DDD8B0E2C13B4B300F932C0 /* AccountNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD8B0D2C13B4B300F932C0 /* AccountNotificationsView.swift */; };
+		1DDD8B112C13B59300F932C0 /* TeamGeneralSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD8B102C13B59300F932C0 /* TeamGeneralSettings.swift */; };
 		1DEF3E7D2C0FB98A00E9E8A1 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF3E7C2C0FB98A00E9E8A1 /* SignupView.swift */; };
 		1DEF3E7F2C0FBBA000E9E8A1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF3E7E2C0FBBA000E9E8A1 /* LoginView.swift */; };
 		1DEF3E812C10A71A00E9E8A1 /* MyIssuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF3E802C10A71A00E9E8A1 /* MyIssuesView.swift */; };
@@ -77,12 +93,28 @@
 		1D9897522C0F749000993D8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D9897542C0F749000993D8F /* ITSM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ITSM.entitlements; sourceTree = "<group>"; };
 		1D98975B2C0F76BF00993D8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D98975E2C0F793B00993D8F /* CustomNavbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavbarView.swift; sourceTree = "<group>"; };
 		1D9897602C0F7B7800993D8F /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		1D9897632C0F8F9100993D8F /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		1D98976B2C0F913500993D8F /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		1D98976D2C0F96DA00993D8F /* SyncContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncContentView.swift; sourceTree = "<group>"; };
 		1D98976F2C0F9B1300993D8F /* OpenSycnedRealmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSycnedRealmView.swift; sourceTree = "<group>"; };
+		1DB8D7652C134BE700C3D50B /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		1DB8D7672C1355F600C3D50B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1DB8D76A2C13562200C3D50B /* WorkspaceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceSettings.swift; sourceTree = "<group>"; };
+		1DB8D76C2C13563500C3D50B /* AccountSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettings.swift; sourceTree = "<group>"; };
+		1DB8D76E2C13564700C3D50B /* TeamSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSettings.swift; sourceTree = "<group>"; };
+		1DB8D7712C135A1400C3D50B /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
+		1DB8D7752C13675500C3D50B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		1DB8D7772C13689D00C3D50B /* AssetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailView.swift; sourceTree = "<group>"; };
+		1DB8D7792C1369F600C3D50B /* IssueDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailView.swift; sourceTree = "<group>"; };
+		1DB8D77B2C13912A00C3D50B /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		1DB8D77D2C13929700C3D50B /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		1DDD8B042C13AD3D00F932C0 /* ProfileSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettings.swift; sourceTree = "<group>"; };
+		1DDD8B072C13B09E00F932C0 /* Binding+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extension.swift"; sourceTree = "<group>"; };
+		1DDD8B092C13B2A500F932C0 /* AccountSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsView.swift; sourceTree = "<group>"; };
+		1DDD8B0B2C13B3EE00F932C0 /* AccountPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPreferencesView.swift; sourceTree = "<group>"; };
+		1DDD8B0D2C13B4B300F932C0 /* AccountNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNotificationsView.swift; sourceTree = "<group>"; };
+		1DDD8B102C13B59300F932C0 /* TeamGeneralSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamGeneralSettings.swift; sourceTree = "<group>"; };
 		1DEF3E7C2C0FB98A00E9E8A1 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		1DEF3E7E2C0FBBA000E9E8A1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1DEF3E802C10A71A00E9E8A1 /* MyIssuesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIssuesView.swift; sourceTree = "<group>"; };
@@ -131,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				1D98974F2C0F749000993D8F /* Assets.xcassets */,
+				1DDD8B062C13B08B00F932C0 /* Extensions */,
 				1D9897602C0F7B7800993D8F /* info.plist */,
 				1D9897542C0F749000993D8F /* ITSM.entitlements */,
 				1D98975A2C0F76B100993D8F /* Main */,
@@ -163,19 +196,22 @@
 		1D98975D2C0F792500993D8F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1DB8D7772C13689D00C3D50B /* AssetDetailView.swift */,
 				1DEF3E842C10B1FA00E9E8A1 /* AssetFormView.swift */,
 				1DEF3E822C10AD4500E9E8A1 /* AssetListView.swift */,
-				1D98974D2C0F748E00993D8F /* ContentView.swift */,
-				1D98975E2C0F793B00993D8F /* CustomNavbarView.swift */,
-				1DEF3E7E2C0FBBA000E9E8A1 /* LoginView.swift */,
-				1DEF3E802C10A71A00E9E8A1 /* MyIssuesView.swift */,
-				1D98976F2C0F9B1300993D8F /* OpenSycnedRealmView.swift */,
-				1DEF3E7C2C0FB98A00E9E8A1 /* SignupView.swift */,
-				1D98976D2C0F96DA00993D8F /* SyncContentView.swift */,
-				1D60B7BF2C1164E500A32EEE /* WorkspaceSelectorMenuView.swift */,
-				1D60B7C32C116D7300A32EEE /* TextNode.swift */,
+				1DB8D7742C1366BA00C3D50B /* Auth */,
 				014404922C124AAD0044CDA0 /* CallQueueView.swift */,
+				1D98974D2C0F748E00993D8F /* ContentView.swift */,
+				1DB8D7752C13675500C3D50B /* DetailView.swift */,
+				1DB8D7792C1369F600C3D50B /* IssueDetailView.swift */,
+				1DEF3E802C10A71A00E9E8A1 /* MyIssuesView.swift */,
+				1DB8D7732C13669200C3D50B /* Realm */,
+				1DB8D7692C13561400C3D50B /* Settings */,
 				014404A42C12823E0044CDA0 /* SidebarView.swift */,
+				1D60B7C32C116D7300A32EEE /* TextNode.swift */,
+				1D60B7BF2C1164E500A32EEE /* WorkspaceSelectorMenuView.swift */,
+				1DB8D77B2C13912A00C3D50B /* UserListView.swift */,
+				1DB8D77D2C13929700C3D50B /* UserDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +223,7 @@
 				014404942C127B7D0044CDA0 /* AssetType.swift */,
 				014404962C127B990044CDA0 /* Communication.swift */,
 				014404982C127BB30044CDA0 /* Company.swift */,
+				1DB8D7652C134BE700C3D50B /* Favorite.swift */,
 				014404A02C127CBB0044CDA0 /* Issue.swift */,
 				0144049A2C127C830044CDA0 /* Organization.swift */,
 				014404A22C127CCE0044CDA0 /* Status.swift */,
@@ -202,6 +239,73 @@
 				1D98976B2C0F913500993D8F /* RealmManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		1DB8D7692C13561400C3D50B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1DDD8B0F2C13B58D00F932C0 /* Team */,
+				1DDD8B032C13AD2200F932C0 /* Account */,
+				1DB8D7702C135A0300C3D50B /* Workspace */,
+				1DB8D76C2C13563500C3D50B /* AccountSettings.swift */,
+				1DB8D7672C1355F600C3D50B /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1DB8D7702C135A0300C3D50B /* Workspace */ = {
+			isa = PBXGroup;
+			children = (
+				1DB8D7712C135A1400C3D50B /* GeneralSettingsView.swift */,
+				1DB8D76A2C13562200C3D50B /* WorkspaceSettings.swift */,
+			);
+			path = Workspace;
+			sourceTree = "<group>";
+		};
+		1DB8D7732C13669200C3D50B /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				1D98976F2C0F9B1300993D8F /* OpenSycnedRealmView.swift */,
+				1D98976D2C0F96DA00993D8F /* SyncContentView.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		1DB8D7742C1366BA00C3D50B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF3E7E2C0FBBA000E9E8A1 /* LoginView.swift */,
+				1DEF3E7C2C0FB98A00E9E8A1 /* SignupView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1DDD8B032C13AD2200F932C0 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				1DDD8B0D2C13B4B300F932C0 /* AccountNotificationsView.swift */,
+				1DDD8B0B2C13B3EE00F932C0 /* AccountPreferencesView.swift */,
+				1DDD8B092C13B2A500F932C0 /* AccountSettingsView.swift */,
+				1DDD8B042C13AD3D00F932C0 /* ProfileSettings.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		1DDD8B062C13B08B00F932C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1DDD8B072C13B09E00F932C0 /* Binding+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1DDD8B0F2C13B58D00F932C0 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				1DB8D76E2C13564700C3D50B /* TeamSettings.swift */,
+				1DDD8B102C13B59300F932C0 /* TeamGeneralSettings.swift */,
+			);
+			path = Team;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,26 +387,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				014404A12C127CBB0044CDA0 /* Issue.swift in Sources */,
+				1DB8D7662C134BE700C3D50B /* Favorite.swift in Sources */,
 				1DEF3E7D2C0FB98A00E9E8A1 /* SignupView.swift in Sources */,
 				1D9897702C0F9B1300993D8F /* OpenSycnedRealmView.swift in Sources */,
 				0144049B2C127C830044CDA0 /* Organization.swift in Sources */,
+				1DB8D76F2C13564700C3D50B /* TeamSettings.swift in Sources */,
+				1DDD8B052C13AD3D00F932C0 /* ProfileSettings.swift in Sources */,
 				1D98976E2C0F96DA00993D8F /* SyncContentView.swift in Sources */,
 				1D60B7C22C116AB700A32EEE /* HoverButton.swift in Sources */,
 				1D60B7C42C116D7300A32EEE /* TextNode.swift in Sources */,
+				1DB8D76B2C13562200C3D50B /* WorkspaceSettings.swift in Sources */,
+				1DDD8B112C13B59300F932C0 /* TeamGeneralSettings.swift in Sources */,
 				1D98975C2C0F76BF00993D8F /* AppDelegate.swift in Sources */,
 				1D98974E2C0F748E00993D8F /* ContentView.swift in Sources */,
 				014404A32C127CCE0044CDA0 /* Status.swift in Sources */,
 				1DEF3E852C10B1FA00E9E8A1 /* AssetFormView.swift in Sources */,
+				1DB8D7782C13689D00C3D50B /* AssetDetailView.swift in Sources */,
 				014404932C124AAD0044CDA0 /* CallQueueView.swift in Sources */,
 				1D60B7C92C11F3F100A32EEE /* CustomControlGroupStyle.swift in Sources */,
+				1DB8D7762C13675500C3D50B /* DetailView.swift in Sources */,
 				1D60B7C02C1164E500A32EEE /* WorkspaceSelectorMenuView.swift in Sources */,
+				1DB8D77C2C13912A00C3D50B /* UserListView.swift in Sources */,
+				1DB8D77E2C13929700C3D50B /* UserDetailView.swift in Sources */,
+				1DDD8B082C13B09E00F932C0 /* Binding+Extension.swift in Sources */,
 				014404A52C12823E0044CDA0 /* SidebarView.swift in Sources */,
 				014404992C127BB30044CDA0 /* Company.swift in Sources */,
+				1DB8D77A2C1369F600C3D50B /* IssueDetailView.swift in Sources */,
 				1D9897642C0F8F9100993D8F /* Asset.swift in Sources */,
-				1D98975F2C0F793B00993D8F /* CustomNavbarView.swift in Sources */,
+				1DDD8B0E2C13B4B300F932C0 /* AccountNotificationsView.swift in Sources */,
+				1DB8D76D2C13563500C3D50B /* AccountSettings.swift in Sources */,
+				1DB8D7682C1355F600C3D50B /* SettingsView.swift in Sources */,
+				1DDD8B0A2C13B2A500F932C0 /* AccountSettingsView.swift in Sources */,
 				1DEF3E812C10A71A00E9E8A1 /* MyIssuesView.swift in Sources */,
 				1D98974C2C0F748E00993D8F /* ITSMApp.swift in Sources */,
+				1DDD8B0C2C13B3EE00F932C0 /* AccountPreferencesView.swift in Sources */,
 				1DEF3E832C10AD4500E9E8A1 /* AssetListView.swift in Sources */,
+				1DB8D7722C135A1400C3D50B /* GeneralSettingsView.swift in Sources */,
 				014404972C127B990044CDA0 /* Communication.swift in Sources */,
 				0144049D2C127C9A0044CDA0 /* Team.swift in Sources */,
 				0144049F2C127CA80044CDA0 /* User.swift in Sources */,

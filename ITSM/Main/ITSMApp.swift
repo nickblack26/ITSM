@@ -8,15 +8,22 @@ struct ITSMApp: SwiftUI.App {
 
     var body: some Scene {
         WindowGroup {
-            // Using Sync?
             if let app = app {
                 SyncContentView(app: app)
-//                    .tint(.tint)
             } else {
                 EmptyView()
             }
         }
-        .windowStyle(.hiddenTitleBar)
+//        .settings {
+//            SettingsTab(.new(title: "General", icon: .gearshape), id: "general", color: .gray) {
+//               SettingsSubtab(.noSelection, id: "general") { GeneralSettingsView() }
+//           }
+//        }
+//        .windowStyle(.hiddenTitleBar)
         .windowToolbarStyle(.unifiedCompact)
+        
+        Settings {
+            SettingsView()
+        }
     }
 }

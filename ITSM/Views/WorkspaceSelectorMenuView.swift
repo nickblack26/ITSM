@@ -23,7 +23,9 @@ struct WorkspaceSelectorMenuView: View {
                 
                 Divider()
                 
-                Text("Workspace settings")
+                SettingsLink {
+                    Text("Workspace settings")
+                }
                 
                 Text("Invite and manage members")
                 

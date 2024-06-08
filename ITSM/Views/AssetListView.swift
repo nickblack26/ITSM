@@ -14,7 +14,7 @@ struct AssetListView: View {
                 
                 Text(asset.type?.name ?? "")
                 
-                Text("\(asset.user?.firstName ?? "") \(asset.user?.lastName ?? "")")
+                Text("\(asset.user?.name ?? "") \(asset.user?.name ?? "")")
                 
                 Spacer()
                 

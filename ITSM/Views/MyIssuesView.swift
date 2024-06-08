@@ -2,30 +2,34 @@ import SwiftUI
 import RealmSwift
 
 struct MyIssuesView: View {
+    @ObservedResults(Issue.self) private var issues
+
     @State private var showInspector: Bool = false
     @State private var selectedTab: Tab? = .assigned
-    @ObservedResults(Issue.self) private var myIssues
     
     var body: some View {
         Grid(alignment: .topLeading) {
             GridRow(alignment: .top) {
-                List(myIssues) { issue in
-                    HStack {
-                        Text(issue.identifier ?? "")
-                        
-                        Text(issue.name ?? "")
-                        
-                        Spacer()
-                        
-                        Text(
-                            issue.completedAt ?? Date(),
-                            format: .dateTime
-                        )
+                List(issues) { issue in
+                    NavigationLink(value: issue) {
+                        HStack {
+                            Text(issue.identifier ?? "")
+                            
+                            Text(issue.name ?? "")
+                            
+                            Spacer()
+                            
+                            Text(
+                                issue.completedAt ?? Date(),
+                                format: .dateTime
+                            )
+                        }
                     }
                 }
                 .scrollContentBackground(.hidden)
             }
         }
+        .scrollContentBackground(.hidden)
         .inspector(isPresented: $showInspector) {
             Form {
                 Text("My issues")

@@ -9,29 +9,14 @@ struct ContentView: View {
     var body: some View {
         NavigationSplitView {
             SidebarView(tab: $tab)
+//                .toolbar {
+//                    ToolbarItem {
+//                        WorkspaceSelectorMenuView()
+//                    }
+//                }
         } detail: {
-            switch tab {
-            case .user(let userTab):
-                switch userTab {
-                case .inbox:
-                    Text("Inbox view")
-                case .myIssues:
-                    MyIssuesView()
-                }
-            case .workspace(let workspaceTab):
-                switch workspaceTab {
-                case .assets:
-                    AssetListView()
-                default:
-                   TextNode()
-                }
-            default:
-                TextNode()
-            }
-        }
-        .toolbar {
-            ToolbarItem {
-                WorkspaceSelectorMenuView()
+            NavigationStack {
+                DetailView(tab: $tab)
             }
         }
     }
