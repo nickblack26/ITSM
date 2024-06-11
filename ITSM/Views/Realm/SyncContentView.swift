@@ -36,7 +36,7 @@ struct SyncContentView: View {
                 .environment(\.realmConfiguration, config)
         } else {
             NavigationStack {
-                LoginView(app: app)
+//                LoginView(app: app)
             }
         }
     }

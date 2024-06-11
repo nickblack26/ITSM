@@ -1,28 +1,23 @@
-//
-//  RealmManager.swift
-//  ITSM
-//
-//  Created by Nick Black on 6/4/24.
-//
-
 import Foundation
 import RealmSwift
 import Observation
 
 @Observable
-final class RealmManager {
-    let app: RealmSwift.App
-    var realm: Realm?
-    var config: Realm.Configuration? = Realm.Configuration.defaultConfiguration
+final class MongoManager {
+    private let app: RealmSwift.App = RealmSwift.App(id: "application-0-sdvzftl")
+    var client: RealmSwift.MongoClient?
     var currentUser: RealmSwift.User?
+    var customUserData: Document?
+    var userId: ObjectId?
+    var organizationId: ObjectId?
     
-   init() {
-       self.app = RealmSwift.App(id: "application-0-sdvzftl")
+    init() {
+        print("Running mongo")
+        setupUser(user: app.currentUser)
+        self.client = currentUser?.mongoClient("mongodb-atlas")
     }
     
     func login() async {
-        // Authenticate with the instance of the app that points
-        // to your backend. Here, we're using anonymous login.
         do {
             let user = try await app.login(
                 credentials: .emailPassword(
@@ -31,41 +26,25 @@ final class RealmManager {
                 )
             )
             
-            self.currentUser = user
-            
-            self.realm = try await openSyncedRealm(user: user)
+//            self.currentUser = user
+            self.client = user.mongoClient("mongodb-atlas")
         } catch {
             print(error)
         }
     }
     
-    @MainActor
-    func openSyncedRealm(user: RealmSwift.User) async throws -> Realm? {
-        guard var config = config else { return try await .init() }
-        self.config = user.flexibleSyncConfiguration { subs in
-            guard let _ = subs.first(named: "organizations") else { return }
-            guard let _ = subs.first(named: "companies") else { return }
-            guard let _ = subs.first(named: "teams") else { return }
-            guard let _ = subs.first(named: "my_issues") else { return }
-            
-            subs.append(QuerySubscription<Organization>(name: "organizations"))
-            
-            subs.append(QuerySubscription<Company>(name: "companies"))
-            
-            subs.append(QuerySubscription<Team>(name: "teams"))
-            
-//            subs.append(QuerySubscription<Issue>(name: "my_issues", query: {
-//                do {
-//                    let currentUser = try ObjectId(string: user.id)
-//                    return $0.assignee == currentUser
-//                } catch {
-//                    return $0.assignee == .generate()
-//                }
-//            }))
+    private func setupUser(user: RealmSwift.User?) {
+        guard let currentUser = app.currentUser else { return }
+        self.currentUser = currentUser
+        self.customUserData = currentUser.customData
+        
+        if let orgInnerOptional = currentUser.customData["organizationId"], let orgAnyBSON = orgInnerOptional, case let .objectId(orgId) = orgAnyBSON {
+            self.organizationId = orgId
         }
         
-        config.objectTypes = [Organization.self, Company.self, Team.self, Issue.self]
-        return try await Realm(configuration: config, downloadBeforeOpen: .always)
+        if let userInnerOptional = currentUser.customData["_id"], let userAnyBSON = userInnerOptional, case let .objectId(userId) = userAnyBSON {
+            self.userId = userId
+        }
     }
     
 //    @MainActor

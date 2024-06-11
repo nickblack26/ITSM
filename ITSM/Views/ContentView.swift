@@ -9,11 +9,6 @@ struct ContentView: View {
     var body: some View {
         NavigationSplitView {
             SidebarView(tab: $tab)
-//                .toolbar {
-//                    ToolbarItem {
-//                        WorkspaceSelectorMenuView()
-//                    }
-//                }
         } detail: {
             NavigationStack {
                 DetailView(tab: $tab)
@@ -30,7 +25,7 @@ extension ContentView {
     enum TabSelection: Hashable, Codable {
         case user(Tab)
         case workspace(WorkspaceTab)
-//        case team(Team)
+        case team(Team)
     }
     
     enum Tab: String, CaseIterable, Codable {

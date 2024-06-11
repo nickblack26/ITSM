@@ -1,7 +1,7 @@
 import Foundation
 import RealmSwift
 
-class Organization: Object, ObjectKeyIdentifiable {
+class Organization: Object, ObjectKeyIdentifiable, Codable {
     @Persisted(primaryKey: true) var _id: ObjectId
     @Persisted var allowMembersToInvite: Bool?
     @Persisted var allowedAuthServices: List<String>
@@ -23,18 +23,18 @@ class Organization: Object, ObjectKeyIdentifiable {
     @Persisted var workSchedule: List<WorkSchedule>
 }
 
-class Features: EmbeddedObject {
+class Features: EmbeddedObject, Codable {
     @Persisted var roadmap: Bool?
     @Persisted var saml: Bool?
     @Persisted var samlSettings: SAMLSettings?
 }
 
-class Theme: EmbeddedObject {
+class Theme: EmbeddedObject, Codable {
     @Persisted var color: String?
 }
 
 
-class SAMLSettings: EmbeddedObject {
+class SAMLSettings: EmbeddedObject, Codable {
     @Persisted var entityId: String?
     @Persisted var metaDataUrl: String?
     @Persisted var metaDataDownloadUrl: String?
@@ -44,7 +44,7 @@ class SAMLSettings: EmbeddedObject {
 }
 
 
-class WorkSchedule: EmbeddedObject {
+class WorkSchedule: EmbeddedObject, Codable {
     @Persisted var closed: Bool = false
     @Persisted var endTime: String?
     @Persisted var startTime: String?

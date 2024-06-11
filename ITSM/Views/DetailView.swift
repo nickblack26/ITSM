@@ -22,6 +22,8 @@ struct DetailView: View {
                 default:
                    TextNode()
                 }
+            case .team(let team):
+                Text(team.name)
             default:
                 TextNode()
             }

@@ -11,7 +11,7 @@ struct SidebarView: View {
     @ObservedResults(Issue.self) private var myIssues
     
     var body: some View {
-        List(selection: $tab) {
+        SwiftUI.List(selection: $tab) {
             Section {
                 ForEach(ContentView.Tab.allCases, id: \.self) {
                     Label(
@@ -40,17 +40,46 @@ struct SidebarView: View {
                         $0.name,
                         systemImage: $0.icon ?? ""
                     )
+                    .tag(ContentView.TabSelection.team($0))
                     .listRowBackground(Color.background)
+                }
+            }
+        }
+        .toolbar(removing: .sidebarToggle)
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                Button("Create new project", systemImage: "plus") {
+                    withAnimation {
+//                        try! realm.write {
+//                            let project: Project = .init(
+//                                color: "yellow",
+//                                brief: "",
+//                                icon: "grid",
+//                                issues: [],
+//                                members: [],
+//                                name: "CMDB Project",
+//                                progress: 0,
+//                                sortOrder: teams.count,
+//                                teams: teams.first ?? []
+//                            )
+//                            realm.create(Project.self, value: project)
+//                        }
+                    }
                 }
             }
         }
         .scrollContentBackground(.hidden)
         .background(Color.background)
+        .searchable(
+            text: .constant(""),
+            placement: .sidebar,
+            prompt: Text("Search anything...")
+        )
     }
 }
 
 #Preview {
-    @State var tab: ContentView.TabSelection? = .user(.inbox)
+    @Previewable @State var tab: ContentView.TabSelection? = .user(.inbox)
     
     return NavigationSplitView {
         SidebarView(tab: $tab)
